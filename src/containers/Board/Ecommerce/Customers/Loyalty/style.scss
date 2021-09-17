@@ -1,0 +1,96 @@
+.root {
+    width: 100%;
+    height: auto;
+}
+
+.header-loyalty {
+    font-size: 1.3rem !important;
+}
+
+.heading-loyalty {
+    display: flex !important;
+    justify-content: space-between;
+    margin: 0 0 5px 0;
+    padding-right: 10%;
+}
+
+.sub-menu-loyalty, .sub-menu-loyalty-rate {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.sub-menu-loyalty-rate > .MuiButton-root {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.sub-menu-loyalty-rate > * {
+    padding: 8px 0 !important;
+}
+
+.accordion-summary-div {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-details {
+    display: block !important;
+    div.row {
+        display: flex !important;
+        margin-bottom: 10px;
+        div.column {
+            width:50%;
+            .MuiFormControl-root.MuiTextField-root {
+                display: inline-flex !important;
+                width: 70%;
+            }
+        }
+        
+    }
+    
+}
+
+.title-box {
+    display: flex;
+    .box-color {
+        width: 20px;
+        height: 20px;
+        div {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.title-box > * {
+    padding: 0 5px;
+}
+
+.box-color-in {
+    width: 40px;
+    height: 20px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    padding: 5px;
+    div#btnClr {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.chrome-picker-style {
+    position: absolute;
+    z-index: 10;
+    // position: r;
+    // top: 0px;
+    // right: 0px;
+    // left: 0px;
+    // bottom: 0px;
+}
+
+@media (min-width: 1280px) {
+    .heading-loyalty {
+        max-width: 1980px !important;
+    }
+}

@@ -1,0 +1,254 @@
+@import "../../../../../variables";
+
+.segments-report-container {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    &__filters {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 50px;
+
+        &__filter {
+            margin-left: 3%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            .MuiInput-input {
+                font-size: 0.85rem;
+            }
+
+            & > button {
+                height: 35px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: $font-body;
+                outline: none;
+                border: none;
+                background-color: #3f51b5;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    &__header {
+        width: 90%;
+        margin-left: 5%;
+        height: 60px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+
+        &__option {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            height: 25px;
+            border-radius: 10px;
+            padding: 2.5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.03);
+            }
+
+            &__icon,
+            &__title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #3f51b5;
+            }
+
+            &__icon {
+                width: 30%;
+                height: 100%;
+
+                & > i {
+                    padding: 10px;
+                }
+            }
+
+            &__title {
+                width: 70%;
+                height: 100%;
+
+                & > h1 {
+                    font-family: $font-body;
+                    font-size: 0.7rem;
+                    padding: 0px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+
+    .table {
+        margin-top: 10px;
+        width: 95%;
+        display: flex;
+        flex-flow: column wrap;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+
+        &__header {
+            width: 100%;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.025);
+            display: flex;
+            flex-flow: row wrap;
+
+            & > div {
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                & > h1 {
+                    font-family: $font-title;
+                    font-size: 0.85rem;
+                    padding-left: 4%;
+                }
+            }
+
+            &__column1 {
+                width: 40%;
+            }
+
+            &__column2 {
+                width: 20%;
+                justify-content: center;
+
+                & > h1 {
+                    padding-left: 0%;
+                }
+            }
+        }
+
+        &__row {
+            width: 100%;
+            height: 45px;
+            background-color: white;
+            display: flex;
+            flex-flow: row wrap;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+            & > div {
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                & > h1 {
+                    font-family: $font-body;
+                    font-size: 0.8rem;
+                    font-weight: 200;
+                    padding-left: 4%;
+                }
+            }
+
+            &__column1 {
+                width: 40%;
+
+                h1 {
+                    color: #3f51b5;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            &__column2 {
+                width: 20%;
+                justify-content: center;
+
+                & > h1 {
+                    padding-left: 0%;
+                }
+            }
+        }
+    }
+}
+
+.report-segment-details-container {
+    width: 100%;
+    height: 400px;
+
+    &__header {
+        width: 96%;
+        margin-left: 2%;
+        height: 60px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+
+        &__option {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            height: 25px;
+            border-radius: 10px;
+            padding: 2.5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.03);
+            }
+
+            &__icon,
+            &__title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #3f51b5;
+            }
+
+            &__icon {
+                width: 30%;
+                height: 100%;
+
+                & > i {
+                    padding: 10px;
+                }
+            }
+
+            &__title {
+                width: 70%;
+                height: 100%;
+
+                & > h1 {
+                    font-family: $font-body;
+                    font-size: 0.7rem;
+                    padding: 0px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+
+    &__table {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        height: 75vh;
+    }
+}

@@ -1,0 +1,156 @@
+@import "../../../../variables";
+
+.report-sales-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+
+    &__filters {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 50px;
+
+        &__filter {
+            margin-left: 3%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            .MuiInput-input {
+                font-size: 0.85rem;
+            }
+
+            & > button {
+                height: 35px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: $font-body;
+                outline: none;
+                border: none;
+                background-color: #3f51b5;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &__header {
+        width: 96%;
+        margin-left: 2%;
+        height: 60px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+
+        &__option {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            height: 25px;
+            border-radius: 10px;
+            padding: 2.5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.03);
+            }
+
+            &__icon,
+            &__title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #3f51b5;
+            }
+
+            &__icon {
+                width: 30%;
+                height: 100%;
+
+                & > i {
+                    padding: 10px;
+                }
+            }
+
+            &__title {
+                width: 70%;
+                height: 100%;
+
+                & > h1 {
+                    font-family: $font-body;
+                    font-size: 0.7rem;
+                    padding: 0px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+
+    &__sales-table {
+        width: 96%;
+        margin-left: 2%;
+        display: flex;
+        flex-flow: column wrap;
+        min-width: 700px;
+        height: 61vh;
+
+        .MuiDataGrid-row {
+            font-size: 0.8rem !important;
+            color: rgba(0, 0, 0, 0.87) !important;
+            font-family: $font-body !important;
+            background-color: white !important;
+        }
+
+        .MuiDataGrid-columnsContainer {
+            border: none !important;
+            background-color: rgba(0, 0, 0, 0.04) !important;
+            min-height: 50px !important;
+            max-height: 50px !important;
+            border-radius: 6px !important;
+            overflow: hidden !important;
+        }
+
+        .MuiDataGrid-iconSeparator {
+            display: none !important;
+        }
+
+        .MuiSvgIcon-root {
+            width: 20px !important;
+        }
+
+        .MuiDataGrid-root {
+            border: none !important;
+            transform: scale(1) !important;
+        }
+
+        .MuiDataGrid-cell {
+            border: none !important;
+            outline: none !important;
+        }
+
+        .MuiDataGrid-viewport {
+            height: 100% !important;
+            border: none !important;
+        }
+
+        .MuiDataGrid-columnHeader {
+            outline: none !important;
+        }
+
+        .MuiDataGrid-dataContainer {
+            height: 100%;
+        }
+
+        .Mui-selected {
+            background-color: rgba(0, 0, 0, 0.025) !important;
+        }
+    }
+}

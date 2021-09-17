@@ -1,0 +1,98 @@
+{
+  "name": "admin-fe-2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/data-grid": "^4.0.0-alpha.33",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^12.20.15",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.7",
+    "accounting": "^0.4.1",
+    "antd": "^4.16.7",
+    "apexcharts": "^3.27.2",
+    "axios": "^0.21.1",
+    "chart.js": "^3.3.2",
+    "color-rgba": "^2.2.3",
+    "dotenv": "^10.0.0",
+    "draft-js": "^0.11.7",
+    "draft-js-export-html": "^1.4.1",
+    "gsap": "^3.7.0",
+    "html-react-parser": "^1.2.7",
+    "js-file-download": "^0.4.12",
+    "material-table": "^1.69.3",
+    "moment": "^2.29.1",
+    "node-sass": "^6.0.0",
+    "query-string": "^7.0.0",
+    "react": "^17.0.2",
+    "react-apexcharts": "^1.3.9",
+    "react-chartjs-2": "^2.11.2",
+    "react-color": "^2.19.3",
+    "react-currency-input-field": "^3.5.0",
+    "react-dom": "^17.0.2",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-dropzone": "^11.3.4",
+    "react-gsap": "^3.2.1",
+    "react-icons": "^4.2.0",
+    "react-number-format": "^4.6.3",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-spinners": "^0.11.0",
+    "react-spreadsheet": "^0.5.5",
+    "react-timeago": "^6.2.1",
+    "recharts": "^2.0.9",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-saga": "^1.1.3",
+    "socket.io-client": "^4.1.3",
+    "string": "^3.3.3",
+    "typesafe-actions": "^5.1.0",
+    "typescript": "^4.3.2",
+    "validator": "^13.6.0",
+    "web-vitals": "^1.1.2",
+    "xlsx": "^0.17.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/accounting": "^0.4.1",
+    "@types/color-rgba": "^2.1.0",
+    "@types/draft-js": "^0.11.3",
+    "@types/query-string": "^6.3.0",
+    "@types/react-color": "^3.0.4",
+    "@types/react-draft-wysiwyg": "^1.13.2",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/react-timeago": "^4.1.2",
+    "@types/socket.io-client": "^3.0.0",
+    "@types/validator": "^13.6.3"
+  }
+}

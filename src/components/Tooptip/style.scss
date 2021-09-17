@@ -1,0 +1,58 @@
+@import "../../variables";
+
+.tooltip-container {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 52%;
+    z-index: 100;
+    left: 1%;
+
+    &__icon {
+        width: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > i {
+            color: rgba(0, 0, 0, 0.25);
+            transition: all 0.25s ease;
+            font-size: 1rem;
+
+            &:hover {
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+    &__modal {
+        position: absolute;
+        display: none;
+        font-family: $font-body !important;
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 0.85);
+        max-width: 40ch;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        font-size: 0.8rem;
+        border-radius: 5px;
+        vertical-align: middle;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        left: 11%;
+        animation: appearModal 0.25s ease;
+
+        @keyframes appearModal {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    }
+}

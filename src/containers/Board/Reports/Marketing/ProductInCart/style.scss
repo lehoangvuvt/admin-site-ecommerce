@@ -1,0 +1,160 @@
+@import "../../../../../variables";
+
+.report-customers-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+
+    &__header {
+        width: 96%;
+        margin-left: 2%;
+        height: 60px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+
+        &__option {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            height: 25px;
+            border-radius: 10px;
+            padding: 2.5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.03);
+            }
+
+            &__icon,
+            &__title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #3f51b5;
+            }
+
+            &__icon {
+                width: 30%;
+                height: 100%;
+
+                & > i {
+                    padding: 10px;
+                }
+            }
+
+            &__title {
+                width: 70%;
+                height: 100%;
+
+                & > h1 {
+                    font-family: $font-body;
+                    font-size: 0.7rem;
+                    padding: 0px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+
+    &__customers-table {
+        width: 96%;
+        margin-left: 2%;
+        display: flex;
+        flex-flow: column wrap;
+        min-width: 700px;
+        height: 61vh;
+    }
+}
+.report-detail-order-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: white;
+    margin-top: 5%;
+
+    &__header {
+        width: 96%;
+        margin-left: 2%;
+        height: 60px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+
+        &__option {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            height: 25px;
+            border-radius: 10px;
+            padding: 2.5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.03);
+            }
+
+            &__icon,
+            &__title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #3f51b5;
+            }
+
+            &__icon {
+                width: 30%;
+                height: 100%;
+
+                & > i {
+                    padding: 10px;
+                }
+            }
+
+            &__title {
+                width: 70%;
+                height: 100%;
+
+                & > h1 {
+                    font-family: $font-body;
+                    font-size: 0.7rem;
+                    padding: 0px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+
+    &__customers-table {
+        width: 96%;
+        margin-left: 2%;
+        display: block;
+        flex-flow: column wrap;
+        min-width: 700px;
+        height: 61vh;
+        margin-top: 0%;
+        margin-bottom: 5%;
+
+        & >button {
+            font-family: $font-body;
+            font-size: 0.7rem;
+            padding: 0px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: rgb(111, 111, 241);
+        }
+        
+    }
+
+    
+}

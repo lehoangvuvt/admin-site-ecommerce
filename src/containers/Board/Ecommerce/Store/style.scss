@@ -1,0 +1,24 @@
+.root {
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+}
+
+.storeBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(232,232,232);
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.storeCodeInput {
+    min-width: 250px !important;
+}
+
+.bodyBox {
+    margin-left: 5rem !important;
+    margin-top: 15px;
+    display: block;
+}

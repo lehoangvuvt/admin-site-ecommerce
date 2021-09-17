@@ -1,0 +1,12 @@
+@import "../../../../../variables";
+
+.mail-setting-details-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+
+    & > .table {
+        height: 40vh;
+    }
+}

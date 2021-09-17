@@ -1,0 +1,173 @@
+@import "../../variables";
+
+.global-search-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    animation: appearGlobalSearch 0.25s ease;
+
+    @keyframes appearGlobalSearch {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    &__right {
+        width: 30%;
+        min-width: 300px;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-flow: column wrap;
+
+        &__search-bar-container {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__search-bar {
+                width: 90%;
+                height: 38px;
+                background-color: white;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                border: 2px solid rgba(0, 0, 0, 0.1);
+                transition: border 0.25s ease;
+
+                & > i {
+                    padding-left: 3%;
+                    padding-right: 3%;
+                    font-size: 0.95rem;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+
+                & > input {
+                    height: 80%;
+                    width: 80%;
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                    font-family: $font-body !important;
+                    font-size: 0.8rem;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        &__products-container {
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            transform-origin: top;
+            animation: appearProducts 0.25s ease;
+
+            @keyframes appearProducts {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            &__header {
+                width: 90%;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.04);
+                border-radius: 6px;
+                margin-bottom: 15px;
+
+                & > h1 {
+                    font-family: $font-body !important;
+                    font-size: 0.8rem;
+                    height: 100%;
+                    color: rgba(0, 0, 0, 0.8);
+                    display: flex;
+                    align-items: center;
+                    padding-left: 4%;
+                    padding-right: 2.5%;
+                }
+            }
+
+            &__products {
+                width: 100%;
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                margin-bottom: 20px;
+
+                &__product {
+                    width: 90%;
+                    height: 45px;
+                    background-color: white;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    cursor: pointer;
+                    border-radius: 6px;
+                    box-sizing: border-box;
+                    color: rgba(0, 0, 0, 0.7);
+                    transition: all 0.1s ease;
+
+                    mark {
+                        background-color: #3f51b5;
+                        color: white;
+                    }
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.05);
+                        color: rgba(0, 0, 0, 1);
+                    }
+
+                    &__image {
+                        width: 15%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        & > img {
+                            max-width: 75%;
+                            max-height: 75%;
+                            width: auto;
+                            height: auto;
+                        }
+                    }
+
+                    &__name {
+                        width: 85%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        & > h1 {
+                            font-family: $font-body !important;
+                            font-size: 0.7rem;
+                            padding-left: 2%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import "./variables";
+
+body {
+  background-color: rgba(0, 0, 0, 0.025);
+  overflow-x: hidden;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  font-family: $font-body;
+  font-variant: none;
+  font-feature-settings: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0 !important;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  font-family: $font-body;
+  line-height: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+p {
+  margin-bottom: 0em !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3f51b5;
+}
+
+.rdw-dropdown-selectedtext {
+  color: black;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.ant-input[disabled] {
+  color: black;
+  background-color: white;
+  cursor: default;
+  opacity: none;
+}

@@ -1,0 +1,15 @@
+export const tooltipContents = {
+    productName: 'Product name cannot exceed 50 characters',
+    brandName: 'Brand name cannot exceed 50 characters',
+    attributeName: 'Attribute name cannot exceed 50 characters',
+    attributeLabel: 'Attribute label is the label to show to customers. The label is not like the attribute name which represents the exclusive of the attribute in the database and cannot be duplicated. Attribute labels can be duplicated.',
+    attributeValueType: "Define data type of a attribute's value. For example: color attribute should has the VARCHAR data type.",
+    attributeSetName: 'Attribute set name cannot exceed 50 characters',
+    mainAttribute: 'Main attribute is the attribute to group attribute into sets of products',
+    subAttribute: 'Sub attribute is the attribute to define the different between products have the same main attribute',
+    shortDescription: 'Short description',
+    longDescription: 'Long description',
+    tax: 'Tax on product is tax payable per unit of good or service produced or exchanged. They may correspond to a monetary amount per unit of quantity of a good or service or calculated as a specified percentage of the price or product price',
+    attributeSet: 'Attribute set is the set of attributes for each product type. For example: a t-shirt can have a attribute set includes two attributes: color and size_text (X, XL, M, etc)',
+    productImages: 'You can upload only one or 3 images for each product option. From the left to right is the order of the priority of images.',
+}

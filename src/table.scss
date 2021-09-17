@@ -1,0 +1,82 @@
+@import "./variables";
+
+.MuiDataGrid-columnHeaderTitle {
+    font-size: 0.8rem;
+    font-weight: bold !important;
+    color: rgba(0, 0, 0, 0.8) !important;
+    font-family: $font-body !important;
+}
+
+.MuiDataGrid-footerContainer {
+    background-color: white !important;
+}
+
+.MuiSwitch-thumb {
+    transform: scale(0.9);
+}
+
+.MuiSwitch-track {
+    transform: scale(0.9);
+}
+
+.MuiButtonBase-root {
+    font-size: 0.8rem !important;
+}
+
+.MuiDataGrid-main {
+    border-radius: 5px;
+}
+
+.MuiDataGrid-row {
+    font-size: 0.75rem !important;
+    color: black !important;
+    font-family: $font-body !important;
+    background-color: white !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.MuiDataGrid-columnsContainer {
+    min-height: 50px !important;
+    max-height: 50px !important;
+    overflow: hidden !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.MuiDataGrid-iconSeparator {
+    display: none !important;
+}
+
+.MuiSvgIcon-root {
+    width: 20px !important;
+}
+
+.MuiDataGrid-root {
+    border: none !important;
+    transform: scale(1) !important;
+}
+
+.MuiDataGrid-cell {
+    border: none !important;
+    outline: none !important;
+}
+
+.MuiDataGrid-viewport {
+    height: 100% !important;
+    border: none !important;
+}
+
+.MuiDataGrid-columnHeader {
+    outline: none !important;
+}
+
+.MuiDataGrid-dataContainer {
+    height: 100%;
+}
+
+.Mui-selected {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.MuiDataGrid-window {
+    top: 50px !important;
+}

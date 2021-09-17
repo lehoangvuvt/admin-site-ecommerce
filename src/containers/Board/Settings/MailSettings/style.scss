@@ -1,0 +1,23 @@
+@import "../../../../variables";
+
+.mail-settings-container {
+    & > a {
+        padding: 15px;
+        margin-left: 5px;
+        font-family: $font-body;
+        text-decoration: underline !important;
+        font-size: 0.9rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #3f51b5;
+    }
+
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+
+    & > .table {
+        height: 60vh;
+        width: 100%;
+    }
+}

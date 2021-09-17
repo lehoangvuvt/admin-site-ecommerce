@@ -1,0 +1,61 @@
+.root {
+    width: 100%;
+    height: auto;
+}
+
+.addCouponBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(232,232,232);
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.divider-heading{
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,0.5);
+    &:after {
+        content: "";
+        flex: 1;
+        background-color: rgba(0,0,0,0.2);
+        height: 1px;
+        margin: 0 1rem;
+    }
+}
+
+.tab-panel-id {
+    margin: 0 20px;
+    div {
+        margin-bottom: 5px;
+    }
+}
+
+form#couponForm > div > * {
+    margin-bottom: 10px;
+}
+
+.tabbar {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.layout-time-promotion {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+@media only screen and (min-width: 1280px) {
+    .layout-time-promotion {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 786px ) and (max-width: 1280px) {
+    .layout-time-promotion {
+        width: 40%;
+    }
+}

@@ -1,0 +1,58 @@
+@import "../../../../variables";
+
+.shipping-methods-container {
+    &__header {
+        width: 96%;
+        margin-left: 2%;
+        height: 80px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-end;
+
+        & > button {
+            background-color: #3f51b5;
+            font-family: $font-body !important;
+            color: white;
+            outline: none;
+            border: none;
+            font-size: 0.8rem;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            min-width: 11%;
+            text-transform: capitalize;
+            cursor: pointer;
+            border-radius: 5px;
+            filter: brightness(90%);
+            transition: all 0.2s ease;
+            margin-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            &:hover {
+                filter: brightness(100%);
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+    & > a {
+        padding: 15px;
+        margin-left: 5px;
+        font-family: $font-body;
+        text-decoration: underline !important;
+        font-size: 0.9rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #3f51b5;
+    }
+
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+
+    & > .table {
+        height: 60vh;
+        width: 100%;
+    }
+}

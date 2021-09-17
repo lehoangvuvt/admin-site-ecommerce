@@ -1,0 +1,118 @@
+@import "../../../../../../variables";
+
+.template-details-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+
+    & > button {
+        width: 12%;
+        margin-left: 84.5%;
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        background-color: #3f51b5;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-family: $font-body;
+        cursor: pointer;
+        font-size: 0.95rem;
+        color: white;
+    }
+
+    &__search-bar {
+        width: 93%;
+        margin-left: 3.5%;
+        margin-top: 20px;
+
+        & > input {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.025);
+            font-size: 0.95rem;
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+            border-radius: 5px 5px 0px 0px;
+        }
+    }
+
+    &__fields-container {
+        width: 93%;
+        margin-left: 3.5%;
+        height: 180px;
+        background-color: rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-flow: column;
+        overflow-y: auto;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+
+        &__field {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            animation: appearField 0.4s ease;
+
+            @keyframes appearField {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                background-color: white;
+            }
+
+            & > p {
+                font-size: 0.85rem;
+                padding-left: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    &__text-container {
+        margin-top: 30px;
+        width: 93%;
+        margin-left: 3.5%;
+
+        & > textarea {
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 5px;
+            resize: none;
+            height: 200px;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            font-family: $font-body !important;
+            padding: 10px;
+            line-height: 25px;
+
+            &:focus {
+                border: 2px solid #3f51b5 !important;
+                outline: none !important;
+            }
+        }
+    }
+
+    &__contents-preview {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        width: 93%;
+        margin-left: 3.5%;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
